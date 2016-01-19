@@ -1,0 +1,9 @@
+git status
+git init (initialize current repository)
+
+
+What happens when you initialize a repository? Why do you need to do it?
+
+It creates a .git directory under current directory, though the files are not committed now.
+I have to add them into tracked files.
+
