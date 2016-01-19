@@ -1,9 +1,14 @@
 git status
 git init (initialize current repository)
-
+git commit -m "Commit message"
 
 What happens when you initialize a repository? Why do you need to do it?
 
 It creates a .git directory under current directory, though the files are not committed now.
 I have to add them into tracked files.
 
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+I dont quite understand what the staging area is, it seems like a buffer area preparing for the commit?
+Or I should just always keep the ones I want to trace at the staging area.
