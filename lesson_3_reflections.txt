@@ -1,3 +1,7 @@
 git remote         (check remotes on computer)
 git remote add origin URL
 git remote -v (v for verbose: more info)
+
+When would you want to use a remote repository rather than keeping all your work local?
+
+Of course it may be very useful if I have multiple work stations, or I am coorperating with others on some projects.
