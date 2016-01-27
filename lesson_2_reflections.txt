@@ -1,6 +1,18 @@
 git status
 git init (initialize current repository)
 git commit -m "Commit message"
+git add
+git diff (it shows the current modification compared with staging area)
+         (if you don't add anything to staged area, it should be the same as most recent commit)
+         (after you add the to-be-committed document to staging area, it should output nothing)
+git diff --staged (compare staged to most recent commit, good to double check it is indeed what you want to commit)
+git reset --hard (reset working directory and the staging area = current commit) (not reversible)
+git branch    (showing current branch)
+git log --graph --oneline master easy-mode
+git merge master coins
+git show XXX  (this shows the difference between XXX and its parent)
+git branch -d coins (-d for 'delete', it only deletes the label, not the commits)
+
 
 What happens when you initialize a repository? Why do you need to do it?
 
@@ -12,3 +24,29 @@ How is the staging area different from the working directory and the repository?
 
 I dont quite understand what the staging area is, it seems like a buffer area preparing for the commit?
 Or I should just always keep the ones I want to trace at the staging area.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+I could always check the difference between most recent commit and the staging area to make sure the change is only one commit per logical change
+
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Of course if your real project has many 'branch-like' structure, you should setup the branches to help keeping history organized.
+
+
+How do the diagrams help you visualize the branch structure?
+
+It helps me a lot for what is the parent is what!!!! With the diagram, I could understand the relationship more easily.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+It would combine all the changes in the two branches together into the merged commit. Because it indeed involves all the changes.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros: It uses a very smart way to merge the changes, which alleviate our work a lot.
+Cons: Ocassionally, we still need to resolve the conflict manually.
