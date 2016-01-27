@@ -1,0 +1,3 @@
+git remote         (check remotes on computer)
+git remote add origin URL
+git remote -v (v for verbose: more info)
