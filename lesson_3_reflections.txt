@@ -1,6 +1,9 @@
 git remote         (check remotes on computer)
 git remote add origin URL
 git remote -v (v for verbose: more info)
+git push origin master (the first argument is the remote name, the second is the destination branch)
+git pull origin master (similar lar)
+
 
 When would you want to use a remote repository rather than keeping all your work local?
 
