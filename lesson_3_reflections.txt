@@ -3,7 +3,9 @@ git remote add origin URL
 git remote -v (v for verbose: more info)
 git push origin master (the first argument is the remote name, the second is the destination branch)
 git pull origin master (similar lar)
-
+git config --global credential.helper wincred (after running this, then login for once, it will store the credentials)
+fork on github is like clone on github server
+git clone URL
 
 When would you want to use a remote repository rather than keeping all your work local?
 
@@ -13,3 +15,16 @@ Of course it may be very useful if I have multiple work stations, or I am coorpe
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
 Because you may want to get everything done before it is published (i.e. the public version should a executable version)
+
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Forks work for copying others' project on GitHub to your own GitHub account.
+Clones is for getting a repository from GitHub to local computer.
+Branch is to creat a new 'version' of the current project in your local computer.
+Of course, they should be used as described here.
+
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+So that when pull things from GitHub, it knows how to deal with the conflict.
